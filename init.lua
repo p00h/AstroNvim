@@ -81,5 +81,6 @@ return {
     --     ["~/%.config/foo/.*"] = "fooscript",
     --   },
     -- }
-  end,
+    vim.cmd([[colorscheme tokyonight-night]])
+    end,
 }
