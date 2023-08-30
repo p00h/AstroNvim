@@ -20,9 +20,25 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    --
+    --
+    -- GO mappings
+    ["<leader>dgt"] = {
+      function()
+        require("dap-go").debug_test()
+      end,
+      desc = "Debug go test",
+    },
+    ["<leader>dgl"] = {
+      function()
+        require("dap-go").debug_last_test()
+      end,
+      desc = "Debug last go test"
+    }
   },
+
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
-  },
+  }
 }

@@ -7,7 +7,7 @@ My personal user config for AstroVim
 - Install AstroNvim
 
 ```sh
-git clone https://github.com/AstroNvim/AstroNvim.git ~/.config/nvim
+git clone --depth 1 https://github.com/AstroNvim/AstroNvim.git ~/.config/nvim
 ```
 
 - Install these user settings
